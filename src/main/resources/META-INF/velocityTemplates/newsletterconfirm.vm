@@ -1,0 +1,38 @@
+<html>
+<body>
+<div class="col-lg-9" style="font:14px/20px ;
+    padding:22px 41px 0 13px;
+   background-color:rgba(214, 225, 242, 1);
+    margin-left: 49px;
+    width: 68%;
+    height:250px;">
+   <legend style="font-size:large"><center> HELPING HANDS Newsletter</center></legend>
+
+   <div class="col-lg-6 col-lg-offset-3 "> 
+    <div>
+      <h3 style="font-size:medium" >Please Confirm Subscription 
+        </h3>
+  <a href="${approotUrl.urlPath}/confirmNewsLetter?letterId=${letter.letterId}" button type="submit" class="btn" id="btn-login" style="background-color:#115781;border-color:#115781;padding:8px;color:white;border-top-color: #115781;
+border-bottom-color: #115781; text-decoration: none;">Yes,subscribe me to the list</button></a><br>
+	
+      <p>If you received this email by mistake, simply delete it. You won't be subscribed if you don't click the confirmation link above.</p>
+		Thanks<br/>
+        Quetzal Development Team.
+      <p>For questions about this list, please contact: <a href="https://mail.google.com/mail/#compose">quetzalteam.corasent@gmail.com </a> </p>
+     <br><br><br>
+                                   
+              
+  </div>
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

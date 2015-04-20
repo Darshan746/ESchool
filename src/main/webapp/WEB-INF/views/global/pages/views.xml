@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- Individual Pages -->
+	<!-- Home Page -->
+	<definition name="home" extends="global_master">
+		<put-attribute name="global_title" value="MySchool - Home" />
+		<put-attribute name="global_content"
+			value="/WEB-INF/views/global/pages/home.jsp" />
+	</definition>
+	<!-- School Registration -->
+	<definition name="register" extends="global_master">
+		<put-attribute name="global_title" value="MySchool - Register" />
+		<put-attribute name="global_content"
+			value="/WEB-INF/views/global/pages/register.jsp" />
+	</definition>
+	
+	<!-- Login Page -->
+	<definition name="login" extends="global_master">
+		<put-attribute name="global_title" value="MySchool - Login" />
+		<put-attribute name="global_content"
+			value="/WEB-INF/views/global/pages/login.jsp" />
+	</definition>
+	
+	<!-- Login Success Page -->
+	<definition name="success" extends="global_master">
+		<put-attribute name="global_title" value="MySchool - Success" />
+		<put-attribute name="global_content"
+			value="/WEB-INF/views/global/pages/success.jsp" />
+	</definition>
+	
+</tiles-definitions>

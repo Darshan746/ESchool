@@ -1,0 +1,14 @@
+<html>
+    <body>
+        Dear ${user.username},<p/>
+        <hr/>
+        <h3>Welcome to Quetzal.</h3>
+        <h4>Your Email : ${user.email}</h4> 
+        <p>Please click on below link to activate your account.</p>
+        
+        <a href="${approotUrl.urlPath}/confirmUser?userId=${user.userid}&token=${token.token}">Activate My Account</a>
+        <hr/>
+		Thanks<br/>
+        Quetzal Development Team.
+    </body>
+</html>

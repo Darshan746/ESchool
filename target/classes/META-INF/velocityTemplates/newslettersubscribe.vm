@@ -1,0 +1,125 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Quetzal News Letter</title>
+</head>
+
+<body style="margin: 0; padding: 0; ">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center"> 
+        <tr>
+            <td style="padding: 10px 0 30px 0;" class="deviceWidth">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" align="center" style="border: 1px solid #cccccc; border-collapse: collapse; " >
+                    <tr>
+                    
+                    <td style="text-align: center;font-size: 27px;padding: 7px;background: none repeat scroll 0% 0% rgb(238, 76, 80);;color: white;">
+                        NEWSLETTER      <a href="http://www.facebook.com/" style="color: #ffffff;"><br>
+                        <h4 style="float:left;">Helping Hands</h4>
+                       
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td bgcolor="#ffffff" style="padding: 17px 19px;" >
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center"  class="deviceWidth">
+                                <tr>
+                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;" class="deviceWidth">
+                                        <b>${publish.publishName}</b>
+                                    </td>
+                                    <td style="color: #153643; font-family: Arial, sans-serif; font-size: 20px; text-align:right" class="deviceWidth">
+                                        <b>${publish.publishDate}</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 20px 0 30px 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px;text-align: justify;color:#797979;" class="deviceWidth">
+                                        ${publish.publishDescription}
+                                        </td>
+                                </tr>
+                              <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center"class="deviceWidth">
+                                            <tr>
+                                                <td width="260" valign="top" class="deviceWidth">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-top: -35px;" class="deviceWidth">          
+                                                        <tr>
+                                                            <td style="padding: 0 0 0 0; color: #153643; font-family: Arial, sans-serif; font-size: 16px; line-height: 20px; " >
+                                                               HIGHLIGHTS
+                                                            </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                
+                                                
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+ <tr>
+                                    <td>
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center">
+                                            <tr>
+                                                <td width="260" valign="top" class="deviceWidth">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="deviceWidth">
+                                                       
+                                                        <tr>
+                                                            <td>
+                                                                   <ol type="circle" style="color:black;font-size:15px;">
+                                                                   #if ($highlights )
+                                                                   		#foreach ($highlight in $highlights )
+                                                                    		<li>$highlight.message</li>
+                                                                       #end
+                                          							#end
+                                                                            </ol>
+                                                                        </td>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                                
+                                                
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+
+
+
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  style="padding: 14px; background-color:  rgba(224, 70, 42, 0.73)">
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" align="center"class="deviceWidth">
+                                <tr>
+                                    <td style="color: #ffffff; text-align:center; font-family: Arial, sans-serif; font-size: 14px;" width="75%" class="deviceWidth">
+                                        &reg;Copyright HelpingHands.com .All Right Reserved <br/>
+                                        <a href="${approotUrl.urlPath}/unsubscribeEmailLetter?letterId=${letter.letterId}" style="color: #ffffff;"><font color="#ffffff">Unsubscribe</font></a> 
+                                    </td>
+                                    <td align="right" width="25%" class="deviceWidth">
+                                        <table border="0" cellpadding="0" cellspacing="0" align="center" class="deviceWidth">
+                                            <tr>
+                                                <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;" class="deviceWidth">
+                                                    <a href="http://www.twitter.com/" style="color: #ffffff;">
+                                                        <i class="fa fa-twitter fa-2x"  style="display: block;" border="0" /></i>
+                                                    </a>
+                                                </td>
+                                                <td style="font-size: 0; line-height: 0;" width="20" class="deviceWidth">&nbsp;</td>
+                                                <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;" class="deviceWidth">
+                                                    <a href="http://www.facebook.com/" style="color: #ffffff;">
+                                                       <i class="fa fa-facebook fa-2x"  style="display: block;" border="0" /></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

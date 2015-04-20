@@ -1,0 +1,14 @@
+<html>
+    <body>
+        Dear ${volunteer.volunteerName},<p/>
+        <hr/>
+        <h3>Welcome to Quetzal.</h3>
+        <h4>Your Email : ${volunteer.vEmail}</h4> 
+        <p>Thank you for subscribing as a volunteer. If not subscribed please ignore this mail.</p>
+        <p>Please click on below link to verify your registration details.</p>
+        <a href="${approotUrl.urlPath}/activateVolunteer?volunteerId=${volunteer.volunteerId}&token=${token}">Verify Your Details</a>
+        <hr/>
+		Thanks<br/>
+        Quetzal Development Team.
+    </body>
+</html>

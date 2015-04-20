@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="global_master" template="/WEB-INF/views/global/template/master.jsp">
+		<put-attribute name="global_title" value="" />
+		<put-attribute name="global_header" value="/WEB-INF/views/global/template/header.jsp" />
+		<put-attribute name="global_content" value="/WEB-INF/views/global/template/content.jsp" />
+		<put-attribute name="global_footer" value="/WEB-INF/views/global/template/footer.jsp" />
+	</definition>
+</tiles-definitions>

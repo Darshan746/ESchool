@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	<!-- Individual Pages -->
+	
+	<!-- admin dashboard -->
+	<definition name="admin/dashboard" extends="admin_master">
+		<put-attribute name="admin_title" value="title" />
+		<put-attribute name="admin_content" value="/WEB-INF/views/admin/pages/dashboard.jsp" />
+	</definition>
+	
+	<!-- admin dashboard -->
+	<definition name="addSchool" extends="admin_master">
+		<put-attribute name="admin_title" value="Add School|Eschool" />
+		<put-attribute name="admin_content" value="/WEB-INF/views/admin/pages/addSchool.jsp" />
+	</definition>
+	
+</tiles-definitions>

@@ -1,0 +1,11 @@
+<html>
+    <body>
+         Dear ${contactUs.getUname()}<p/>
+         <h4>Ngo Name: ${contactUs.getNgoProfile().getNgoName()} (Quetzal Member)</h4> 
+         <p>${contactUs.replyMessage}</p>
+        <hr/>
+        Thanks & Regards 
+        <br/>
+       ${contactUs.getNgoProfile().getNgoName()}
+    </body>
+</html>
