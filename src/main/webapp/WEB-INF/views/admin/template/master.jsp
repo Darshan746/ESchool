@@ -30,6 +30,6 @@
 	<body >
 			<tiles:insertAttribute name="admin_header" />
 			<tiles:insertAttribute name="admin_content" />
-			<tiles:insertAttribute name="admin_footer" />
+			<%-- <tiles:insertAttribute name="admin_footer" /> --%>
 	</body>
 </html>

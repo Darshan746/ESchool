@@ -22,10 +22,12 @@
                         <a href="#">Results</a>
                     </li>
                     <li>
-                        <a href="#">Exams</a>
+                    <c:url value="/student/register" var="studentRegister"/>
+                        <a href="${studentRegister}">Student Registration</a>
                     </li>
                     <li>
-                        <a href="#">Events</a>
+                    	<c:url value="/section/addSection" var="addSection"/>
+                        <a href="${addSection}">Section</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>

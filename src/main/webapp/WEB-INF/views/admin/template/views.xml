@@ -5,6 +5,6 @@
 		<put-attribute name="admin_title" value="" />
 		<put-attribute name="admin_header" value="/WEB-INF/views/admin/template/header.jsp" />
 		<put-attribute name="admin_content" value="/WEB-INF/views/admin/template/content.jsp" />
-		<put-attribute name="admin_footer" value="/WEB-INF/views/admin/template/footer.jsp" />
+	<!-- 	<put-attribute name="admin_footer" value="/WEB-INF/views/admin/template/footer.jsp" /> -->
 	</definition>
 </tiles-definitions>
