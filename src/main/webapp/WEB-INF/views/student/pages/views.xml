@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+			<!-- Student Registration page -->
+			<definition name="student/registration" extends="admin_master">
+				<put-attribute name="admin_title" value="Student_Registration" />
+				<put-attribute name="admin_content" value="/WEB-INF/views/student/pages/studentRegistration.jsp" />
+			</definition>
+	
+			<!-- Student physical information page -->
+			<definition name="student/registration/physicalInfo" extends="admin_master">
+				<put-attribute name="admin_title" value="Student_Registration" />
+				<put-attribute name="admin_content" value="/WEB-INF/views/student/pages/studentPhysicalInfo.jsp" />
+			</definition>
+	
+</tiles-definitions>
