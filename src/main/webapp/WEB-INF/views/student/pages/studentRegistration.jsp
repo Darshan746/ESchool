@@ -13,7 +13,7 @@
 					<div class="panel-heading">
 						<strong class="text-center">Sign Up</strong>
 						
-							<c:if test="${! empty RegisteredStudent }">
+							<c:if test="${! empty RegisteredStudent }"> 
 								<p class="text-center">the Student ${ RegisteredStudent} added successfully</p>
 							</c:if>
 							
@@ -49,17 +49,21 @@
 									<form:errors path="standard" />
 								</div>
 							</div>
-							
-							
-  									<div class="form-group">
-											<div class="col-sm-8 col-sm-offset-2">
-														<form:select path="section">  
-														<form:option value="NONE" label="----------------Select Section For Student--------------"/>      
-						    							<form:options items="${sections}"/>
-						  								</form:select> 
-	  										</div>
+						
+						
+						   <div class="form-group">
+								<div class="col-sm-8 col-sm-offset-2">
+								<select name="sectionName">
+  										<c:forEach items="${sections}" var="section">
+  											  <option value="${section.key}">${section.value}</option>
+  										</c:forEach>
+								</select>
 								</div>
-							
+								
+							</div>
+								
+								<center></center>
+						
 							<h4 class="text-center">Address Details</h4>
 							
 							<div class="form-group">

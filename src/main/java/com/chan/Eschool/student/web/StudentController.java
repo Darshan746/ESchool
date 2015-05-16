@@ -4,6 +4,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -64,10 +66,11 @@ public class StudentController {
 		  * @return
 		  */
 	     @RequestMapping(value="/student/register",method=RequestMethod.POST)
-		  public String registerStudentToDb(@ModelAttribute Student student,final RedirectAttributes redirectAttribute)  {
-	    	 
+		  public String registerStudentToDb(HttpServletRequest request,@ModelAttribute Student student,final RedirectAttributes redirectAttribute)  {
+	    	      
 	    	 	   School school = schoolService.getSchool(1);
 	    	 	   student.setSchool(school);
+	    	 	   student.setSection(sectionService.getSectionById(Integer.parseInt(request.getParameter("sectionName"))));
 			       Student registerStudent = studentService.registerStudent(student);
 		    	   redirectAttribute.addFlashAttribute("RegisteredStudent", registerStudent.getStudent_name());
 			       return "redirect:/student/registration/physicalInfo?student_id="+student.getId();
