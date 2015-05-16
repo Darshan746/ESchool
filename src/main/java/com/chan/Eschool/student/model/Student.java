@@ -83,7 +83,7 @@ public class Student {
 		 	  this.physicalInfo = physicalInfo;
 	}
 	
-	@OneToOne
+	@ManyToOne
 	@JoinColumn(name =" section_Id")
 	public Section getSection() {
 		return section;
