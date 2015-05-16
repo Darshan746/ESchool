@@ -39,7 +39,7 @@ public class SectionController  {
 			  
 			        model.addAttribute( "sectionId", new Integer(0) );
 			  		model.addAttribute( "sectionList", sectionService.getSections() );
-			         return "section/addSection" ;
+			        return "section/addSection" ;
 		  }
 		  
 		  

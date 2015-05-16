@@ -1,5 +1,9 @@
 package com.chan.Eschool.student.web;
 
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,21 +17,26 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.chan.Eschool.admin.service.school.SchoolService;
 import com.chan.Eschool.global.model.School;
+import com.chan.Eschool.student.model.Section;
 import com.chan.Eschool.student.model.Student;
 import com.chan.Eschool.student.model.StudentPhysicalInfo;
+import com.chan.Eschool.student.service.SectionService;
 import com.chan.Eschool.student.service.StudentService;
 
 @Controller
 public class StudentController {
 	
 		
-		private static final Logger logger = LoggerFactory.getLogger(StudentController.class);
+	//+++++	private static final Logger logger = LoggerFactory.getLogger(StudentController.class);
 	
 		@Autowired
 		private StudentService studentService;
 		
 		@Autowired
 		private SchoolService schoolService;
+		
+		@Autowired
+		private SectionService sectionService;
 		
 		/**
 		 *  This method is used for get the Registration page for student
@@ -38,7 +47,14 @@ public class StudentController {
 		 @RequestMapping(value="/student/register",method=RequestMethod.GET)
 		 public String registerStudent(Model model,@ModelAttribute Student student)  {
 			 
-			 	  return "student/registration";
+			 		List<Section>  sectionsList = (List<Section>) sectionService.getSections();
+		            Map<Integer, String> sections = new LinkedHashMap<Integer, String>();
+		            for(Section section : sectionsList)  {
+		                       sections.put( section.getId(), section.getSectionName() );
+		            }
+		            model.addAttribute ( "sectionsList", sectionsList );
+		            model.addAttribute ("sections",sections );
+				 	 return  "student/registration";
 		 }
 		 
 		 /**

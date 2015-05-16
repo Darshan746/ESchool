@@ -51,6 +51,15 @@
 							</div>
 							
 							
+  									<div class="form-group">
+											<div class="col-sm-8 col-sm-offset-2">
+														<form:select path="section">  
+														<form:option value="NONE" label="----------------Select Section For Student--------------"/>      
+						    							<form:options items="${sections}"/>
+						  								</form:select> 
+	  										</div>
+								</div>
+							
 							<h4 class="text-center">Address Details</h4>
 							
 							<div class="form-group">
@@ -112,6 +121,7 @@
 									<form:errors path="address.street" />
 								</div>
 							</div>
+							
 							
 							<div class="form-group last">
 								<div class="col-sm-offset-3 col-sm-9">
